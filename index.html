@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"> <!--Codificacion -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Hace la que la pagina se adapte al tamanio de la pantalla-->
+        <title>Portfolio Santiago</title> <!--Titulo de la ventana-->
+        <meta name="theme-color" content="#09f"> <!--Color para la ventana-->
+        <link rel="icon" type="image/jpg" href="images\Gatico.jpg"> <!--Es el icono de la ventana-->
+        <link rel="stylesheet" href="style.css"
+        <!--OPEN GRAPH--> 
+        
+        <!--Esto es para que al compartir nuestra 
+            pagina se vea de manera adecuada en redes, de tal 
+            forma que salga informacion adelantada de la pagina, 
+            asi como una imagen-->
+        <meta property="og:tittle" content="Portfolio de un ingeniero">
+        <meta property="og:description" content="Portafolio de un ingeniero">
+        <meta property="og:image" content="images\Gatico.jpg">
+        
+      
+        
+    </head>
+    
+    <body>
+        <!--<video autoplay loop muted src="videos\night_ride.mp4"
+            width="1000"
+            height="1000">
+
+        </video>-->
+        <header>
+            <button id="homeBtn" onclick="showSection('skills')" class="logoHomeBtn">
+                <img src="images\logoPAG2.png" width="80" height=auto alt="Logo" />
+                <span>Shuh3n</span>
+            </button>
+
+            <div id="btnHome"  class="logoHomeBtn" >   
+                   
+               
+            </div>
+            
+            <nav class="navbar">
+            
+                <button id="skillsBtn" onclick="showSection('skills')">Conocimientos</button>
+                <button id="aboutBtn" class="button" onclick="showSection('about')">Sobre mi</button>
+                <button id="proyectsBtn" onclick="showSection('proyects')">Proyectos</button>
+        
+        
+                <!--Navegacion de la pagina, te lleva hasta la seccion-->
+        
+        
+                <!--Navegacion externa, envia al usuario a un link externo-->
+                <!--Target blank, es para que el navegador abra el link en una nueva 
+                                        ventana sin cerrar la nuestra-->
+                <!--noreferrer,es para no enviar informacion adicional a la hora de redirigir,
+                                        es decir, envia sin decir de donde viene ni que hizo en la ventana anterior-->
+        
+            </nav>
+        
+        </header>
+        
+        <section id="skills" class="visible">
+            <div class="presentation">
+                
+                <div>
+                    Hola, soy<br>
+                    <span>Santiago Orozco</span>
+                    
+        
+                </div>
+        
+                <div class="phpersonal">
+                    <img src="images\personals.jpg" alt="Santiago's Photo">
+                </div>
+        
+            </div>
+
+            <h2>Conocimientos</h2>
+            <div class="grid">
+                <!-- Celda 1 -->
+                <div class="tecnologia">
+                    <img src="images\Logo_HTML.png" alt="HTML">
+                    <p>HTML</p>
+                </div>
+                <!-- Celda 2 -->
+                <div class="tecnologia">
+                    <img src="images\Logo_CSS.png" alt="CSS">
+                    <p>CSS</p>
+                </div>
+                <!-- Celda 3 -->
+                <!-- <div class="tecnologia">
+                    <img src="images\Logo_JAVAS.png" alt="JavaScript">
+                    <p>JavaScript</p>
+                </div> -->
+                <!-- Celda 4 -->
+                <div class="tecnologia">
+                    <img src="images\Logo_JAVAFX.png" alt="JavaFX">
+                    <p>JavaFX</p>
+                </div>
+                <!-- Celda 5 -->
+                <div class="tecnologia">
+                    <img src="images\Logo_APPSHEET.png" alt="APPSHEET">
+                    <p>AppSheet</p>
+                </div>
+                <!-- Celda 6 -->
+                <div class="tecnologia">
+                    <img src="images\Logo_GIT.png" alt="Git">
+                    <p>Git</p>
+                </div>
+                <!-- Celda 7 -->
+                <div class="tecnologia">
+                    <img src="images\Logo_PYTHON.png" alt="Python">
+                    <p>Python</p>
+                </div>
+                <!-- Celda 8 -->
+            </div>
+            </div>
+        
+            <!-- <a download href="images\Gatico.jpg">
+                        <img id="photogato" width="100" height="100" title="Foto de gatico"
+                            alt="Foto de un gato pequeño mirando a la cámara con los ojos entrecerrados" src="images\Gatico.jpg">
+                    </a> -->
+            <!--Al anidar la imagen al ancord, 
+                    
+                    hace que al presionar en la imagen esta se descargue en el equipo-->
+        </section>
+
+        <section id="about" class="hidden">
+            <div class="aboutSection">
+                <span>redes></span>
+                <h1>Sobre mi</h1>
+        
+                <p>Mi nombre es Santiago Orozco Zuluaga, actualmente estoy cursando mi carrera universitaria como ingeniero en
+                    sistemas y computación en la Universidad del Quindío, voy en mi sexto semestre de los cuales
+                    he podido adquirir bastantes conocimientos, no solo de la rama de la programación, sino también de aspectos
+                    de pensamiento sistémico, de igual manera con diagramas UML para tener
+                    claridad de las necesidades antes de iniciar un proyecto. <br>
+        
+                </p>
+                <p>
+                    A demás de esto, me dedico a diseñar contenido para redes sociales, carruseles, reels, banners, entre otros
+                    elementos.
+                </p>
+                  
+            </div>
+            <div class="timeline">
+                <h2>Bio</h2>
+            
+                <div class="event">
+                    <h3>2021</h3>
+                    <p>- Obtengo mi título de bachiller en el colegio C.A.S.D
+
+                    </p> <br>
+                </div>
+
+                <div class="event">
+                    <h3>2022</h3>
+                    <p>- Conozco a Jesús</p>
+                </div>
+            
+            </div>
+        </section>
+
+        <section id="proyects" class="hidden">
+            <h1>Proyectos</h1>
+
+
+            <div class="gridProyects" >
+                <div class="proyect">
+                    <a href="https://github.com/MiguelFVasquez/Proyecto-Final-Storify" target="_blank" class="proyect-link">
+                        <img src="images\Shuh3nFY.jpg" width=250px; height=auto;
+                            alt="Imagen de vista previa de un proyecto de reproductor de audio">
+                            <div class="proyectText">
+                                <h3>Shuh3nfy</h3>
+                                <span>Reproductor de audio</span>
+                            </div>
+                    </a>
+                   
+                </div>
+
+                <div class="proyect">
+                    <a href="https://github.com/MiguelFVasquez/Proyecto-Final-Storify" target="_blank" class="proyect-link">
+                        <img src="images\shuh3nPort.png" width=250px; height=140px;
+                        alt="Imagen de vista previa de un proyecto de reproductor de audio">
+                    <div class="proyectText">
+                        <h3>Portfolio</h3>
+                        <span>Página web actual</span>
+                    </div>
+                    </a>
+                   
+                </div>
+            
+            </div>
+
+
+        </section>
+        
+
+
+        <!-- <section>
+            <h2>Preguntas frecuentes</h2>
+            <details>
+                <summary>¿Cuál es tu moto favorita?</summary>
+                <p>Si tuviera que elegir una en específico, sería la Yamaha R6</p>
+                <img 
+                    src="images\R6.jpg" 
+                    alt="Una imagen de un moto deportiva azul"
+                    width="300"
+                    height="200"
+                    title="Foto de una Yamaha R6"
+                >
+            </details>
+            
+        </section> -->
+
+
+        <!-- <section>
+            <h2>Formulario de contacto</h2>
+            <form method="post" action="/">
+                <fieldset>
+                    <legend class="txtForm"><Strong>Informacion personal</Strong> </legend>
+                    
+                    <div>
+                        <label class="txtForm">Nombre:
+                            <input type="text" id="name" name="name" placeholder="Santiago" required>
+                        </label>
+                    </div>
+                    
+                    <div>
+                        <label class="txtForm">Email:
+                            <input type="email" id="email" name="email" placeholder="Example@gmail.com" required>
+                        </label>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend class="txtForm"><strong>Informacion adicional</strong></legend>
+                    <div>
+                        <label class="txtForm">Número:
+                            <input type="tel" id="tel" name="telf" placeholder="3215991748" required>
+                        </label>
+                    </div>
+                </fieldset>
+
+                <button>Enviar contacto</button>
+                <!--Al colocar un boton dentro de un form, este funciona como un submit-->
+            </form>
+        </section> -->
+        
+        </main>
+        <script src="script.js"></script>
+      
+
+    </body>
+    
+
+
+</html>

@@ -1,0 +1,585 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    /* Espacio entre título y navbar */
+    align-items: center;
+    position: sticky;
+    /* Cambiado a sticky */
+    top: 0;
+    /* Se queda pegado en la parte superior al hacer scroll */
+    width: 60%;
+    margin: 0 auto;
+    /* Centra el header horizontalmente */
+    padding: 15px 20px;
+    background: rgba(255, 255, 255, 0.3);
+    /* Fondo semitransparente */
+    backdrop-filter: blur(10px);
+    /* Efecto blur */
+    border-radius: 20px;
+    /* Bordes redondeados */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    /* Sombra */
+    z-index: 1000;
+}
+
+h1 {
+    font-weight: 40px;
+    color: #eeff00;
+}
+
+
+p {
+    text-align: left;
+    color: white;
+    font-family: Tahoma;
+    word-spacing: 4px;
+    line-height: 1.4;
+}
+
+h2 {
+    color: #eeff00;
+
+}
+
+h3 {
+    font-weight: bold;
+    font-size: 17px;
+
+    color: #eeff00;
+}
+
+span {}
+
+
+body {
+    font-family: Tahoma;
+    color: #ffffff;
+    font-size: 14px;
+    margin: 0;
+    /* Quita los márgenes predeterminados */
+    padding: 0;
+    /* Quita el relleno predeterminado */
+    background-size: cover;
+    /* Cubre todo el fondo */
+    background-position: center;
+    /* Centra la imagen */
+    background-attachment: fixed;
+    /* La imagen permanece fija */
+    background-repeat: no-repeat;
+    /* Evita que se repita */
+    background-color: bisque;
+    background-image: url('/images/bgBlack.png');
+    background-color: rgba(0, 0, 0, 0.6);
+    /* Negro con 50% de opacidad */
+    background-blend-mode: overlay;
+}
+
+section {
+    position: absolute;  /* Las secciones se posicionan de manera absoluta */
+    top: 0;              /* Posicionamos todas las secciones desde la parte superior */
+    left: 0;
+    right: 0;
+    
+    display: none;       /* Por defecto todas las secciones están ocultas (sin ocupar espacio) */
+    opacity: 0;          /* Inicialmente no son visibles */
+    transform: translateY(30px);  /* Empezamos un poco desplazadas */
+    transition: opacity 1s ease, transform 1s ease;
+    
+    max-width: 1400px;
+    align-items: center;
+    position: relative;
+    /* Cambiado a sticky */
+    top: 0;
+    /* Se queda pegado en la parte superior al hacer scroll */
+    width: 40%;
+    margin: 0 auto;
+    /* Centra el header horizontalmente */
+    padding: 15px 20px;
+    background: rgba(15, 15, 15, 0.3);
+    /* Fondo semitransparente */
+    backdrop-filter: blur(10px);
+    /* Efecto blur */
+    border-radius: 20px;
+    /* Bordes redondeados */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    /* Sombra */
+    margin-top: 20px;
+
+    text-align: center;
+    padding: 70px 20px;
+    scroll-margin-top: 4rem;
+    /* Ajusta el desplazamiento del anclaje */
+}
+
+section.visible {
+    display: block;      /* Hacemos visible la sección (ahora ocupa espacio) */
+    opacity: 1;          /* Hacerla completamente visible */
+    transform: translateY(0); /* Vuelve a su posición original */
+    animation: fadeInUp 1s ease forwards; /* Animación de entrada */
+}
+header{
+    opacity: 1;          /* Hacerla completamente visible */
+    transform: translateY(0); /* Vuelve a su posición original */
+    animation: fadeInUp 1s ease forwards; /* Animación de entrada */
+    
+}
+
+/* PRESENTACION */
+
+.presentation {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 80px;
+    padding-left: 20px;
+}
+
+.phpersonal img {
+    width: 150px;
+    /* Adjust the size of the photo */
+    height: auto;
+    /* Maintains the aspect ratio */
+    border-radius: 50%;
+    /* Makes the image circular */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    /* Adds a shadow for better appearance */
+}
+
+.presentation div {
+    text-align: left;
+    /* Center-aligns the text */
+    font-size: 3rem;
+    /* Adjust font size */
+    font-weight: bold;
+    color: #ffffff;
+    /* Text color */
+
+}
+
+.presentation span {
+    display: block;
+    /* Ensures the second line stays below the first */
+    font-size: 35px;
+    /* Slightly smaller font size for the name */
+    color: #eeff00;
+    /* Adds a different color for emphasis */
+}
+
+/* HEADER -------------------------------------------------------*/
+
+.navbar {
+    display: flex;
+    /* Coloca los elementos del navbar en una fila */
+    gap: 30px;
+    /* Espaciado entre enlaces */
+}
+
+.navbar a {
+    display: flex;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #0984e3;
+    /* Color al pasar el mouse */
+}
+
+.navbar button {
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    transition: transform 0.2s ease, color 0.3s ease;
+    cursor: pointer;
+}
+
+.navbar button:hover {
+    color: #eeff00;
+}
+
+header .logoHomeBtn{
+    
+}
+
+.logoHomeBtn {
+
+    margin-left: 10px;
+    display: flex;
+    background-color: transparent;
+    border: none;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+
+}
+
+.logoHomeBtn:hover {
+    transform: scale(1.1);
+    /* Slightly enlarge the button */
+    cursor: pointer;
+    /* Ensures the pointer shows a hand icon */
+}
+
+.logoHomeBtn span {
+
+    white-space: nowrap;
+    /* Prevents text wrapping */
+    font-size: 40px;
+    font-family: tahoma;
+    font-weight: bold;
+    color: white;
+}
+
+header div {
+    display: flex;
+}
+
+header h1 {
+    color: white;
+    font-size: 40px;
+    transition: color 0.3s ease;
+
+}
+
+/* --------------------------- ABOUT SECTION-----------------------------*/
+
+.aboutSection {
+    /* text-align: left; */
+
+}
+
+.aboutSection h3 {
+    margin: 0px;
+}
+
+.aboutSection {
+    justify-items: center;
+    /* Centra los elementos horizontalmente */
+    align-items: center;
+    gap: 6px;
+    margin-bottom: 1px;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+}
+
+.timeline {
+    line-height: 1px;
+    margin: 1px;
+    margin-bottom: 1px;
+}
+
+.timeline h2 {
+    font-size: 20px;
+    text-align: left;
+    margin: 30px 0px;
+}
+
+.event {
+    /* display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 6px;
+    font-size: 15px;
+    margin-bottom: 2px; Adds spacing between events */
+    display: flex;
+    flex-direction: row;
+    /* Stacks items vertically */
+    align-items: center;
+    /* Aligns items to the left */
+    justify-content: left;
+    gap: 6px;
+    /* Adds space between the <h3> and <p> */
+    font-size: 15px;
+    margin-bottom: 2px;
+    /* Adds spacing between events */
+}
+
+.event h3 {
+    font-size: 17px;
+    margin: 0px;
+
+}
+
+.event p {
+    margin: 0;
+    /* Removes extra margin */
+    font-size: 14px;
+    /* Slightly smaller text for the description */
+}
+
+
+
+
+/*--------------------------------PROYECTS-------------------------------*/
+
+.gridProyects {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Dos columnas de igual tamaño */
+    gap: 20px; /* Espacio entre las columnas */
+    row-gap: 0px;
+}
+
+.proyect img {
+    border-radius: 20px;
+    border: 2px solid   #eeff00;
+    margin: 0px;
+    object-fit: cover;
+    transition: border-color 0.4s ease;
+    
+
+}
+
+.proyect-link {
+    text-decoration: none;
+    color: inherit;
+    /* Hereda el color del texto */
+    display: block;
+    /* Hace que el enlace abarque todo el contenido */
+    width: 100%;
+}
+
+
+.proyect {
+
+    
+    color: #eeff00;
+    text-align: center;
+    line-height: 1px;
+
+
+    width: 250px;
+    
+    height: 200px;/* Ancho fijo para los cuadrados*/
+   
+    background: rgba(11, 130, 228, 0.15);  /* Alto fijo para los cuadrados */
+    backdrop-filter: blur(10px);
+    /* Efecto blur */
+    border-radius: 15px;
+    /* Bordes redondeados */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.192);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+    margin: 0px;
+    transition: transform 0.3s ease, 
+        box-shadow 0.3s ease,
+        background-color 0.8s ease,
+        color 0.4s ease,
+        border-color 0.3s ease; 
+       
+    
+}
+
+.proyect:hover {
+    border-color: black;
+    transform: scale(1.1);
+    background-color: #eeff00;
+    color: black;
+
+}
+.proyect:hover img{
+    border-color: black;
+}
+
+.proyect span {
+    margin: 0px;
+    transition: color 0.3s ease;
+}
+
+.proyect:hover span {
+    color: black;
+}
+
+.proyect span {
+    color: white;
+}
+
+.proyect h3 {
+    color: inherit;
+}
+.proyect:nth-child(odd){
+    margin-top: 30px;
+}
+.proyect:nth-child(even){
+    margin-top: 0px;
+}
+
+
+
+/*---------------------------------------- ANIMACIONES --------------------------------*/
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(30px); /* Comienza un poco desplazado hacia abajo */
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0); /* Vuelve a su posición original */
+    }
+}
+
+/* Ocultar todas las secciones inicialmente */
+.hidden {
+    visibility: hidden; /* Ocultar las secciones */
+    opacity: 0; /* Mantenerlas invisibles */
+    transform: translateY(30px); /* Desplazadas hacia abajo */
+    transition: visibility 0s, opacity 1s ease, transform 1s ease; /* Controlamos la visibilidad y animación */
+}
+
+/* Cuando la sección se vuelve visible */
+.visible {
+    visibility: visible; /* Hacer visible la sección */
+    opacity: 1; /* Hacerla visible */
+    transform: translateY(0); /* Volver a su posición original */
+    animation: fadeInUp 1s ease forwards; /* Activamos la animación */
+}
+section.visible {
+    visibility: visible; /* Hacer la sección visible */
+    opacity: 1;          /* Hacerla completamente visible */
+    transform: translateY(0); /* Vuelve a su posición original */
+    animation: fadeInUp 1s ease forwards; /* Animación de entrada */
+}
+
+
+
+
+
+
+
+
+
+input {
+    border-width: 2px;
+    background-color: transparent;
+    border-top-color: transparent;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    border-style: solid;
+    border-bottom-color: aliceblue;
+
+}
+
+input::placeholder {
+    color: aliceblue;
+    opacity: 70%;
+}
+
+.txtForm {
+    color: aliceblue;
+}
+
+
+form {
+    background-color: gray;
+}
+
+footer {
+    background-color: gray;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+
+/*--------------------GRID CONOCIMIENTOS-------------------------*/
+.skills h2 {
+    color: white;
+    text-align: left;
+    padding-left: 20px;
+
+}
+
+.tecnologias {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.tecnologias h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* 4 columnas */
+    grid-template-rows: repeat(2, 1fr);
+    /* 2 filas */
+    row-gap: 10px;
+
+    justify-items: center;
+    /* Centra los elementos horizontalmente */
+    align-items: center;
+    /* Centra los elementos verticalmente */
+}
+
+.tecnologia {
+
+    width: 150px;
+    /* Ancho fijo para los cuadrados */
+    height: 150px;
+    /* Alto fijo para los cuadrados */
+    background: rgba(11, 130, 228, 0.15);
+    backdrop-filter: blur(10px);
+    /* Efecto blur */
+    border-radius: 15px;
+    /* Bordes redondeados */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.192);
+    /* Sombra */
+    display: flex;
+    flex-direction: column;
+    /* Coloca imagen y texto en columna */
+    justify-content: center;
+    /* Centra contenido verticalmente */
+    align-items: center;
+    /* Centra contenido horizontalmente */
+    text-align: center;
+    padding: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tecnologia:hover {
+    transform: scale(1.1);
+    /* Efecto de zoom al pasar el mouse */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+    /* Sombra más grande */
+}
+
+.tecnologia img {
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    /* Sombra */
+    width: 100px;
+    /* Tamaño de las imágenes */
+    height: 100px;
+    margin-bottom: 10px;
+    /* Espaciado entre la imagen y el texto */
+}
+
+.tecnologia p {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0;
+    color: #ffffff;
+}
+
+
+/* ANIMACIONES  */
+
+
+@media (min-width: 720px){
+    
+}
