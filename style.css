@@ -34,15 +34,7 @@ h3 {
 }
 
 
-
-body {
-    font-family: Tahoma;
-    color: #ffffff;
-    font-size: 14px;
-    margin: 0;
-    /* Quita los márgenes predeterminados */
-    padding: 0;
-    /* Quita el relleno predeterminado */
+.principal{
     background-size: cover;
     /* Cubre todo el fondo */
     background-position: center;
@@ -52,10 +44,20 @@ body {
     background-repeat: no-repeat;
     /* Evita que se repita */
     background-color: bisque;
-    background-image: url('../images/bgBlack.png');
+    background-image: url('./images/bgBlack.png');
     background-color: rgba(0, 0, 0, 0.6);
     /* Negro con 50% de opacidad */
     background-blend-mode: overlay;
+}
+body {
+    font-family: Tahoma;
+    color: #ffffff;
+    font-size: 14px;
+    margin: 0;
+    /* Quita los márgenes predeterminados */
+    padding: 0;
+    /* Quita el relleno predeterminado */
+
 }
 
 section {
