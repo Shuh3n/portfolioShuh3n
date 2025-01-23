@@ -28,33 +28,32 @@
 
         </video>-->
         <header>
-            <button id="homeBtn" onclick="showSection('skills')" class="logoHomeBtn">
-                <img src="images\logoPAG2.png" width="80" height=auto alt="Logo" />
-                <span>Shuh3n</span>
-            </button>
-
-            <div id="btnHome"  class="logoHomeBtn" >   
-                   
-               
+        
+            <div class="containerHEADER">
+                <button id="homeBtn" onclick="showSection('skills')" class="logoHomeBtn">
+                    <img src="images\logoPAG2.png" width="80" height=auto alt="Logo" />
+                    <h1>Shuh3n</h1>
+                </button>
+        
+        
+                <nav class="navbar">
+        
+                    <button id="skillsBtn" onclick="showSection('skills')">Conocimientos</button>
+                    <button id="aboutBtn" class="button" onclick="showSection('about')">Sobre mi</button>
+                    <button id="proyectsBtn" onclick="showSection('proyects')">Proyectos</button>
+        
+        
+                    <!--Navegacion de la pagina, te lleva hasta la seccion-->
+        
+        
+                    <!--Navegacion externa, envia al usuario a un link externo-->
+                    <!--Target blank, es para que el navegador abra el link en una nueva 
+                                                        ventana sin cerrar la nuestra-->
+                    <!--noreferrer,es para no enviar informacion adicional a la hora de redirigir,
+                                                        es decir, envia sin decir de donde viene ni que hizo en la ventana anterior-->
+        
+                </nav>
             </div>
-            
-            <nav class="navbar">
-            
-                <button id="skillsBtn" onclick="showSection('skills')">Conocimientos</button>
-                <button id="aboutBtn" class="button" onclick="showSection('about')">Sobre mi</button>
-                <button id="proyectsBtn" onclick="showSection('proyects')">Proyectos</button>
-        
-        
-                <!--Navegacion de la pagina, te lleva hasta la seccion-->
-        
-        
-                <!--Navegacion externa, envia al usuario a un link externo-->
-                <!--Target blank, es para que el navegador abra el link en una nueva 
-                                        ventana sin cerrar la nuestra-->
-                <!--noreferrer,es para no enviar informacion adicional a la hora de redirigir,
-                                        es decir, envia sin decir de donde viene ni que hizo en la ventana anterior-->
-        
-            </nav>
         
         </header>
         
@@ -64,6 +63,7 @@
                 <div>
                     Hola, soy<br>
                     <span>Santiago Orozco</span>
+                    <span>Desarrollador</span>
                     
         
                 </div>
@@ -74,44 +74,47 @@
         
             </div>
 
-            <h2>Conocimientos</h2>
-            <div class="grid">
-                <!-- Celda 1 -->
-                <div class="tecnologia">
-                    <img src="images\Logo_HTML.png" alt="HTML">
-                    <p>HTML</p>
+            
+            <div class="conocimientosDiv">
+                <h2>Conocimientos</h2>
+                <div class="grid">
+                    <!-- Celda 1 -->
+                    <div class="tecnologia">
+                        <img src="images\Logo_HTML.png" alt="HTML">
+                        <p>HTML</p>
+                    </div>
+                    <!-- Celda 2 -->
+                    <div class="tecnologia">
+                        <img src="images\Logo_CSS.png" alt="CSS">
+                        <p>CSS</p>
+                    </div>
+                    <!-- Celda 3 -->
+                    <!-- <div class="tecnologia">
+                                <img src="images\Logo_JAVAS.png" alt="JavaScript">
+                                <p>JavaScript</p>
+                            </div> -->
+                    <!-- Celda 4 -->
+                    <div class="tecnologia">
+                        <img src="images\Logo_JAVAFX.png" alt="JavaFX">
+                        <p>JavaFX</p>
+                    </div>
+                    <!-- Celda 5 -->
+                    <div class="tecnologia">
+                        <img src="images\Logo_APPSHEET.png" alt="APPSHEET">
+                        <p>AppSheet</p>
+                    </div>
+                    <!-- Celda 6 -->
+                    <div class="tecnologia">
+                        <img src="images\Logo_GIT.png" alt="Git">
+                        <p>Git</p>
+                    </div>
+                    <!-- Celda 7 -->
+                    <div class="tecnologia">
+                        <img src="images\Logo_PYTHON.png" alt="Python">
+                        <p>Python</p>
+                    </div>
+                    <!-- Celda 8 -->
                 </div>
-                <!-- Celda 2 -->
-                <div class="tecnologia">
-                    <img src="images\Logo_CSS.png" alt="CSS">
-                    <p>CSS</p>
-                </div>
-                <!-- Celda 3 -->
-                <!-- <div class="tecnologia">
-                    <img src="images\Logo_JAVAS.png" alt="JavaScript">
-                    <p>JavaScript</p>
-                </div> -->
-                <!-- Celda 4 -->
-                <div class="tecnologia">
-                    <img src="images\Logo_JAVAFX.png" alt="JavaFX">
-                    <p>JavaFX</p>
-                </div>
-                <!-- Celda 5 -->
-                <div class="tecnologia">
-                    <img src="images\Logo_APPSHEET.png" alt="APPSHEET">
-                    <p>AppSheet</p>
-                </div>
-                <!-- Celda 6 -->
-                <div class="tecnologia">
-                    <img src="images\Logo_GIT.png" alt="Git">
-                    <p>Git</p>
-                </div>
-                <!-- Celda 7 -->
-                <div class="tecnologia">
-                    <img src="images\Logo_PYTHON.png" alt="Python">
-                    <p>Python</p>
-                </div>
-                <!-- Celda 8 -->
             </div>
             </div>
         
@@ -127,7 +130,7 @@
         <section id="about" class="hidden">
             <div class="aboutSection">
                 <span>redes></span>
-                <h1>Sobre mi</h1>
+                <h2>Sobre mi</h2>
         
                 <p>Mi nombre es Santiago Orozco Zuluaga, actualmente estoy cursando mi carrera universitaria como ingeniero en
                     sistemas y computación en la Universidad del Quindío, voy en mi sexto semestre de los cuales
@@ -161,34 +164,44 @@
         </section>
 
         <section id="proyects" class="hidden">
-            <h1>Proyectos</h1>
 
-
-            <div class="gridProyects" >
-                <div class="proyect">
-                    <a href="https://github.com/MiguelFVasquez/Proyecto-Final-Storify" target="_blank" class="proyect-link">
-                        <img src="images\Shuh3nFY.jpg" width=250px; height=auto;
-                            alt="Imagen de vista previa de un proyecto de reproductor de audio">
+            <div class="proyectsDiv">
+            
+            
+                <h2>Proyectos</h2>
+            
+            
+                <div class="gridProyects">
+                    <div class="proyect">
+                        <a href="https://github.com/MiguelFVasquez/Proyecto-Final-Storify" target="_blank" class="proyect-link">
+                            <img src="images\Shuh3nFY.jpg" width=250px; height=auto;
+                                alt="Imagen de vista previa de un proyecto de reproductor de audio">
                             <div class="proyectText">
                                 <h3>Shuh3nfy</h3>
                                 <span>Reproductor de audio</span>
                             </div>
-                    </a>
-                   
-                </div>
-
-                <div class="proyect">
-                    <a href="https://github.com/MiguelFVasquez/Proyecto-Final-Storify" target="_blank" class="proyect-link">
-                        <img src="images\shuh3nPort.png" width=250px; height=140px;
-                        alt="Imagen de vista previa de un proyecto de reproductor de audio">
-                    <div class="proyectText">
-                        <h3>Portfolio</h3>
-                        <span>Página web actual</span>
-                    </div>
-                    </a>
-                   
-                </div>
+                        </a>
             
+                    </div>
+            
+                    <div class="proyect">
+                        <a href="https://github.com/Shuh3n/Curso-HTML" target="_blank" class="proyect-link">
+                            <img src="images\shuh3nPort.png" width=250px; height=140px;
+                                alt="Imagen de vista previa de un proyecto de reproductor de audio">
+                            <div class="proyectText">
+                                <h3>Portfolio</h3>
+                                <span>Página web actual</span>
+                            </div>
+                        </a>
+            
+                    </div>
+            
+                    <div class="proyect">
+                    </div>
+                    <div class="proyect">
+                    </div>
+            
+                </div>
             </div>
 
 
