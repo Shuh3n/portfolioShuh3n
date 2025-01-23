@@ -44,7 +44,7 @@ h3 {
     background-repeat: no-repeat;
     /* Evita que se repita */
     background-color: bisque;
-    background-image: url('./images/bgBlack.png');
+    background-image: url(images/bgBlack.png);
     background-color: rgba(0, 0, 0, 0.6);
     /* Negro con 50% de opacidad */
     background-blend-mode: overlay;
