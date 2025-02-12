@@ -169,6 +169,9 @@ header {
     transition: transform 0.2s ease, color 0.3s ease;
     cursor: pointer;
 }
+.navbar button i{
+    color: #eeff00;
+}
 
 .navbar button:hover {
     color: #eeff00;
@@ -720,6 +723,9 @@ html {
         width: 180px;
 
     }
+    .navbar button {
+        font-size: clamp(1rem, 2vw, 1.5rem); /* Texto responsivo */
+    }
 
 }
 
@@ -756,13 +762,15 @@ html {
     }
 
     .navbar {
-        gap: 20px;
+        gap: 10px;
 
     }
 
     .navbar button {
-        font-size: 25px;
+        font-size: clamp(0.8rem, 2vw, 1.3rem); /* Texto responsivo */
     }
+
+
 
     .grid {
         grid-template-columns: repeat(3, 1fr);
