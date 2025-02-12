@@ -419,6 +419,90 @@ header h1 {
 }
 
 
+.redes{
+    /* width: auto;
+    display: grid;
+    border: 2px solid red;
+    
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 10px;
+    padding: 0 40px;
+    place-items: center; */
+    
+  
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Siempre 2 columnas */
+    gap: 20px; /* Espaciado entre los elementos */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    
+    
+    
+    
+    
+}
+.red{
+    display: flex;
+    flex-direction: row;
+    /* Stacks items vertically */
+    align-items: center;
+    /* Aligns items to the left */
+    justify-content: left;
+    gap: 6px;
+    /* Adds space between the <h3> and <p> */
+    font-size: clamp(0.8rem, 2vw, 1.3rem); /* Texto responsivo */
+    margin-bottom: 2px;
+
+    color: #ffffff;
+    text-align: center;
+    line-height: 1px;
+
+}
+    
+
+.red a{
+    text-decoration: none;
+    color: inherit;
+    /* Hereda el color del texto */
+    display: flex;
+    /* Hace que el enlace abarque todo el contenido */
+    width: 100%;
+    margin: 0px;
+    gap: 10px;
+
+    justify-content: center;
+    align-items: center;
+
+    /* Ancho fijo para los cuadrados */
+    height: auto;
+    /* Ancho fijo para los cuadrados*/
+
+   
+    /* Alto fijo para los cuadrados */
+    backdrop-filter: blur(10px);
+    /* Efecto blur */
+    border: 2px solid #eeff00 ;
+    border-radius: 15px;
+    /* Bordes redondeados */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.192);
+
+    
+    padding: 20px;
+    transition: transform 0.3s ease,
+        box-shadow 0.3s ease,
+        background-color 0.8s ease,
+        color 0.4s ease,
+        border-color 0.3s ease;
+}
+.red a:hover{
+    border-color: black;
+    transform: scale(1.1);
+    background-color: #eeff00;
+    color: black;
+}
+
+
+
 
 
 /*--------------------------------PROYECTS-------------------------------*/
@@ -729,4 +813,5 @@ html {
         height: 100px;
 
     }
+
 }
