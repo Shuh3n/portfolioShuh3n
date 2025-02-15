@@ -425,21 +425,25 @@ header h1 {
 .redes{
     /* width: auto;
     display: grid;
-    border: 2px solid red;
+    
     
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 10px;
     padding: 0 40px;
     place-items: center; */
     
-  
+   
+    
+    /* border: 2px solid red; */
+    
     display: grid;
+    width: 60%; /* Ajusta el ancho al 60% del contenedor padre */
+    max-width: 600px; /* Evita que el grid se expanda demasiado en pantallas grandes */
     grid-template-columns: repeat(2, 1fr); /* Siempre 2 columnas */
     gap: 20px; /* Espaciado entre los elementos */
     justify-content: center; /* Centra horizontalmente */
     align-items: center; /* Centra verticalmente */
-    
-    
+    margin: 0 auto; /* Centra horizontalmente */
     
     
     
@@ -450,8 +454,8 @@ header h1 {
     /* Stacks items vertically */
     align-items: center;
     /* Aligns items to the left */
-    justify-content: left;
-    gap: 6px;
+    justify-content: center;
+    gap: 0px;
     /* Adds space between the <h3> and <p> */
     font-size: clamp(0.8rem, 2vw, 1.3rem); /* Texto responsivo */
     margin-bottom: 2px;
